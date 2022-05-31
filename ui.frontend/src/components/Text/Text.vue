@@ -87,12 +87,14 @@ color: #333333;
 @media screen and (max-width: 800px) {
   .text-format-1 {
     font-size: clamp(2em, 3vw, 3em) !important;
-    margin-right: 3rem !important;
+    margin-left: -3rem !important;
+    padding-right: 0rem !important;
   }
   .text-format-2 {
     font-size: clamp(1em, 1vw, 1em) !important;
-    margin-left: -4rem !important;
-    margin-right: 1rem !important;
+    margin-left: -3rem !important;
+    padding-left: -4rem !important;
+    padding-right: 2rem !important;
   }
   @media screen and (max-width: 450px) {
     .text-format-1 {

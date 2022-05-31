@@ -50,10 +50,18 @@ export default {
   font-family: 'Space Mono';
 }
 
-//  @media screen and (max-width: 800px) {
-//    .c-button {
-//       margin-left: 54% !important;
-//    }
-//  }
+ @media screen and (max-width: 800px) {
+   .c-button {
+      margin-left: 56%;
+      margin-top: 9%;
+   }
+ }
+
+ @media screen and (max-width: 450px) {
+   .c-button {
+      margin-left: 16%;
+      margin-top: 15%;
+   }
+ }
 
 </style>
