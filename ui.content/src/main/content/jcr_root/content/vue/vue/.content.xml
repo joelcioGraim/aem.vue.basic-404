@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-05-31T11:35:40.845-03:00"
+        cq:lastModified="{Date}2022-05-31T13:55:56.656-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/vue/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -131,16 +131,30 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="vue/components/image"
-                    fileReference="/content/dam/angularapp/content.png"/>
+                    fileReference="/content/dam/angularapp/content.png">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <phone
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="23"/>
+                    </cq:responsive>
+                </image>
                 <text_1602245151
                     jcr:created="{Date}2022-05-31T11:11:06.707-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-31T11:11:18.640-03:00"
+                    jcr:lastModified="{Date}2022-05-31T11:48:33.208-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="vue/components/text"
                     className="text-format-1"
-                    text="I have bad news for you"/>
+                    text="I have bad news for you">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <phone
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="23"/>
+                    </cq:responsive>
+                </text_1602245151>
                 <text_1543448619
                     jcr:created="{Date}2022-05-31T11:11:32.763-03:00"
                     jcr:createdBy="admin"
@@ -149,14 +163,33 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="vue/components/text"
                     className="text-format-2"
-                    text="The page you are looking for might be removed or is temporarily unavailable"/>
+                    text="The page you are looking for might be removed or is temporarily unavailable">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <phone
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="23"/>
+                    </cq:responsive>
+                </text_1543448619>
                 <button
                     jcr:created="{Date}2022-05-31T11:35:40.841-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-05-31T11:35:40.841-03:00"
+                    jcr:lastModified="{Date}2022-05-31T12:03:02.575-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="vue/components/button"/>
+                    sling:resourceType="vue/components/button"
+                    text="Back to homepage">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <phone
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="23"/>
+                        <tablet
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="24"/>
+                    </cq:responsive>
+                </button>
             </responsivegrid>
         </root>
         <image jcr:primaryType="nt:unstructured">
