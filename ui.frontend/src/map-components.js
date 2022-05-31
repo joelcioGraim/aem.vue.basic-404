@@ -5,6 +5,8 @@ import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
 import Image from './components/Image/Image'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
+import Button from './components/Button/Button'
+import ContainerBasic from './components/ContainerBasic/ContainerBasic'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -24,6 +26,12 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+// Basic Container Component Mapping
+MapTo('vue/components/container-basic')(ContainerBasic, EditConfig)
+
+// Button Component Mapping
+MapTo('vue/components/button')(Button, EditConfig)
 
 MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
 
