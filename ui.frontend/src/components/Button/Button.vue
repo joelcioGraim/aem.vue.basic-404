@@ -45,9 +45,15 @@ export default {
   width: 216px;
   height: 68px;
   margin-top: 18%;
-  margin-left: 22%;
+  margin-left: 14%;
   text-transform: uppercase;
   font-family: 'Space Mono';
 }
+
+//  @media screen and (max-width: 800px) {
+//    .c-button {
+//       margin-left: 54% !important;
+//    }
+//  }
 
 </style>

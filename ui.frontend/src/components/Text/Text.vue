@@ -42,7 +42,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
 .custom-text-1 {
   color: green;
@@ -64,24 +64,56 @@ color: #333333;
   font-family: 'Space Mono';
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
+  font-size: clamp(0.65em, 4vw, 4em);
   line-height: 70px;
   letter-spacing: -0.035em;
   color: #333333;
-  padding-left: 5rem;
-  margin-top: 7%;
+  padding-left: 6rem;
+  margin-top: 18%;
 }
 .text-format-2 {
   font-family: 'Space Mono';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: clamp(0.2em, 1.6vw, 1.6em);
   line-height: 36px;
   letter-spacing: -0.035em;
   color: #4F4F4F;
-  padding-right: 7rem;
-  padding-left: 5rem;
-  margin-top: 4%;
+  padding-right: 18rem;
+  padding-left: 6rem;
+  margin-top: 7%;
+}
+
+@media screen and (max-width: 800px) {
+  .text-format-1 {
+    font-size: clamp(2em, 3vw, 3em) !important;
+    margin-right: 3rem !important;
+  }
+  .text-format-2 {
+    font-size: clamp(1em, 1vw, 1em) !important;
+    margin-left: -4rem !important;
+    margin-right: 1rem !important;
+  }
+  @media screen and (max-width: 450px) {
+    .text-format-1 {
+      margin-left: -2rem !important;
+      font-size: clamp(2em, 3vw, 3em) !important;
+    }
+    .text-format-2 {
+      font-size: clamp(0.9em, 1.6vw, 1.6em) !important;
+      margin-left: -2rem !important;
+      padding-right: 4rem !important;
+    }
+  }
+
+  // @media screen and (max-width: 340px) {
+  //   .text-format-1 {
+  //     margin-left: -19% !important;
+  //   }
+  //   .text-format-2 {
+  //     margin-left: -19% !important;
+  //   }
+  // }
 }
 
 </style>

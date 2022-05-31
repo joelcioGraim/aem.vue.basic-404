@@ -19,4 +19,10 @@ img {
   min-width: 20vw;
   margin-top: 15%;
 }
+ @media screen and (max-width: 450px) {
+   img {
+      max-width: 60vw;
+      margin-left: 15%;
+   }
+ }
 </style>
