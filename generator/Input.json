@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.vue.core.models",
     "model-impl-pkg": "com.vue.core.models.impl"
   },
-  "name": "checkbox",
-  "title": "Vue - Checkbox",
+  "name": "input",
+  "title": "Vue - Input",
   "group": "SPA Vue Project - Content",
   "type": "components",
   "options": {
@@ -27,24 +27,38 @@
       "request"
     ],
     "generic-javadoc": false,
-    "properties": [
+    "properties": [     
       {
-        "field": "items",
-        "type": "multifield",
-        "label": "Meus Itens",
-        "model-name": "items",
-        "use-existing-model": false,
+        "field": "type",
+        "type": "textfield",
+        "label": "Tipo de Input",
         "json-expose": true,
-        "items": [
-          {
-            "field": "items.type",
-            "type": "textfield",
-            "label": "Tipo de Input",
-            "json-expose": true,
-            "json-property": "items.type"
-          }
-        ]
+        "json-property": "type"
+      },
+      {
+        "field": "name",
+        "type": "textfield",
+        "label": "Nome do Input",
+        "json-expose": true,
+        "json-property": "name"
+      },
+      {
+        "field": "placeholder",
+        "type": "textfield",
+        "label": "Placeholder",
+        "json-expose": true,
+        "json-property": "placeholder"
+      },
+      {
+        "field": "required",
+        "type": "checkbox",
+        "json-expose": true,
+        "attributes": {
+          "value": "{Boolean}false",
+          "text": "Obrigatório"
+        }
       }
+      
     ]
   }
 }

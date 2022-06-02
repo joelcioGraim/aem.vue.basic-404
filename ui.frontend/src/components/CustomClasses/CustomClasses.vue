@@ -6,11 +6,11 @@
 export default {
   name: 'CustomClasses',
   mounted () {
-    const containerLeft = document.querySelector('[cqpath="/content/vue/vue/jcr:content/root/responsivegrid/container_1337994141"] div')
-    containerLeft.classList.add('bg-gray')
+    const containerLeft = document.querySelector('[cqpath="/content/vue/login/jcr:content/root/responsivegrid/container_22415888"] div')
+    containerLeft.classList.add('c-container')
 
-    const containerRight = document.querySelector('[cqpath="/content/vue/vue/jcr:content/root/responsivegrid/container"] div')
-    containerRight.classList.add('bg-green')
+    // const containerRight = document.querySelector('[cqpath="/content/vue/login/jcr:content/root/responsivegrid/container"] div')
+    // containerRight.classList.add('bg-green')
   }
 }
 </script>
@@ -23,5 +23,9 @@ export default {
 .bg-green {
   background-color: green;
   padding: 50px;
+}
+
+.c-container {
+  float: right;
 }
 </style>

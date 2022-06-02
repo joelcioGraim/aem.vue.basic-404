@@ -6,7 +6,9 @@ import Header from './components/Header/Header'
 import Image from './components/Image/Image'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import Button from './components/Button/Button'
-import ContainerBasic from './components/ContainerBasic/ContainerBasic'
+import Input from './components/Input/Input'
+import LoginComputer from './components/LoginComputer/LoginComputer'
+import LoginForm from './components/LoginForm/LoginForm'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -27,8 +29,14 @@ const EditConfig = {
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
 
-// Basic Container Component Mapping
-MapTo('vue/components/container-basic')(ContainerBasic, EditConfig)
+// LoginForm Component Mapping
+MapTo('vue/components/login-form')(LoginForm, EditConfig)
+
+// LoginComputer Component Mapping
+MapTo('vue/components/login-computer')(LoginComputer, EditConfig)
+
+// Input Component Mapping
+MapTo('vue/components/input')(Input, EditConfig)
 
 // Button Component Mapping
 MapTo('vue/components/button')(Button, EditConfig)

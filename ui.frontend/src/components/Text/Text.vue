@@ -44,6 +44,46 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
+
+.login {
+width: 79px;
+height: 45px;
+position: relative;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 45px;
+color: #fff;
+padding-left: 30%;
+padding-top: 15%;
+}
+.continuar {
+width: 270px;
+height: 52px;
+position: relative;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #fff;
+padding-left: 30%;
+}
+.ola-text {
+width: 115px;
+height: 90px;
+position: relative;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 90px;
+color: #fff;
+padding-left: 30%;
+padding-top: 15%;
+}
+
 .custom-text-1 {
   color: green;
 }
