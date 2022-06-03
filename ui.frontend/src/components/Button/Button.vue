@@ -39,7 +39,7 @@ export default {
   background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
   box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
 }
-.c-button {
+.c-button__404 {
   cursor: pointer;
   letter-spacing: 0px;
   line-height: 1.75;
@@ -59,14 +59,14 @@ export default {
 }
 
  @media screen and (max-width: 800px) {
-   .c-button {
+   .c-button__404 {
       margin-left: 56%;
       margin-top: 9%;
    }
  }
 
  @media screen and (max-width: 450px) {
-   .c-button {
+   .c-button__404 {
       margin-left: 16%;
       margin-top: 15%;
    }
