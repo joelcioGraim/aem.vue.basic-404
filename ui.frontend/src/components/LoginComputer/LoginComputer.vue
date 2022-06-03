@@ -31,6 +31,7 @@ export default {
 
 .c-container {
   float: right !important;
+  
 }
 
 img {

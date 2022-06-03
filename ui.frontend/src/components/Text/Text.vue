@@ -1,5 +1,5 @@
 <template>
-  <div :class="className">
+  <div :class="className" :style="cssVars">
     <div
       v-if="richText"
       :id="modelId"
@@ -28,11 +28,20 @@ export default {
     },
     className: {
       type: String
+    },
+    showOps: {
+      type: String,
+      default: 'none'
     }
   },
   computed: {
     modelId () {
       return extractModelId(this.cqPath)
+    },
+    cssVars () {
+      return {
+        '--exibeOps': this.showOps
+      }
     }
   },
   methods: {
@@ -46,6 +55,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
 
 .ops {
+  display: var(--exibeOps);
   text-align: center;
   width: 222px;
   height: 48px;

@@ -6,6 +6,7 @@
         :placeholder="placeholder"
         v-model="value"
         :required="required"
+        v-on:change="signalChange"
     />
 </template>
 
@@ -39,14 +40,9 @@ export default {
       value: ''
     }
   },
-  mounted () {
-    if (localStorage.props.name) {
-      this.value = localStorage.props.name
-    }
-  },
-  watch: {
-    value (newValue) {
-      localStorage.props.name = newValue
+  methods: {
+    signalChange: function (evt) {
+      localStorage.setItem(evt.target.name, evt.target.value)
     }
   }
 
