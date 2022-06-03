@@ -35,7 +35,18 @@ export default {
     return {
       classes: [
         'input__input'
-      ]
+      ],
+      value: ''
+    }
+  },
+  mounted () {
+    if (localStorage.props.name) {
+      this.value = localStorage.props.name
+    }
+  },
+  watch: {
+    value (newValue) {
+      localStorage.props.name = newValue
     }
   }
 
