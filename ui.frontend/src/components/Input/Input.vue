@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 .input__input {
-    width: 100%;
+    width: 45%;
     height: 50px;
     position: relative;
     margin-bottom: 1rem;
@@ -54,6 +54,8 @@ export default {
     border-radius: 50px;
     color: rgb(252, 252, 252);
     text-indent: 4em;
+    margin-left: 30%;
+    margin-top: 2%;
 }
 
 ::placeholder {

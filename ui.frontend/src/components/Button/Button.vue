@@ -1,5 +1,5 @@
 <template>
-  <button :class="items">{{ text }}</button>
+  <button :class="className">{{ text }}</button>
 </template>
 
 <script>
@@ -11,31 +11,39 @@ export default {
       type: String,
       default: 'Botão'
     },
-    backgroundColor: {
-      type: String,
-      default: 'rgb(65,120,205)'
-    }
-  },
-  data () {
-    return {
-      items: [
-        'c-button',
-        'c-t'
-      ]
+    className: {
+      type: String
     }
   }
-
 }
 
 </script>
 
 <style lang="scss" scoped>
+.c-button__form {
+  letter-spacing: 0px;
+  line-height: 1.75;
+  min-width: 64px;
+  border-radius: 50px;
+  box-shadow: none;
+  padding: 4px 8px;
+  transition-duration: 0.4s;
+  color: white;
+  border: none;
+  width: 45%;
+  height: 50px;
+  margin-top: 2%;
+  margin-left: 30%;
+  font-family: 'Poppins';
+  position: relative;
+  background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
 .c-button {
   cursor: pointer;
   letter-spacing: 0px;
   line-height: 1.75;
   min-width: 64px;
-  // border-radius: 20px;
   box-shadow: none;
   padding: 4px 8px;
   transition-duration: 0.4s;

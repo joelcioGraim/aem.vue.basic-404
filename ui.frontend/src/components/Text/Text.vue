@@ -45,6 +45,20 @@ export default {
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
 
+.ops {
+  text-align: center;
+  width: 222px;
+  height: 48px;
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E9B425;
+  padding-left: 37%;
+  padding-top: 2%;
+}
 .login {
 width: 79px;
 height: 45px;
@@ -56,7 +70,7 @@ font-size: 30px;
 line-height: 45px;
 color: #fff;
 padding-left: 30%;
-padding-top: 15%;
+padding-top: 8%;
 }
 .continuar {
 width: 270px;

@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-06-02T18:05:20.151-03:00"
+        cq:lastModified="{Date}2022-06-03T11:59:54.959-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/vue/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -171,9 +171,9 @@
                         className="login"
                         text="Login"/>
                     <input
-                        jcr:created="{Date}2022-06-02T18:03:59.230-03:00"
+                        jcr:created="{Date}2022-06-03T11:08:58.403-03:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2022-06-02T18:04:49.585-03:00"
+                        jcr:lastModified="{Date}2022-06-03T11:31:08.744-03:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="vue/components/input"
@@ -183,10 +183,38 @@
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="18"/>
+                                offset="7"
+                                width="17"/>
                         </cq:responsive>
                     </input>
+                    <input_88209065
+                        jcr:created="{Date}2022-06-03T11:30:28.500-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-03T11:31:32.810-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/input"
+                        name="senha"
+                        placeholder="Senha"
+                        type="password"/>
+                    <text_114362901
+                        jcr:created="{Date}2022-06-03T11:32:23.908-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-03T11:37:33.020-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/text"
+                        className="ops"
+                        text="Ops, usuário ou senha inválidos. Tente novamente!"/>
+                    <button
+                        jcr:created="{Date}2022-06-03T11:52:12.843-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-03T11:59:54.949-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/button"
+                        className="c-button__form"
+                        text="Continuar"/>
                 </container>
                 <container_466432675
                     jcr:created="{Date}2022-06-02T16:05:26.591-03:00"
