@@ -31,7 +31,7 @@ export default {
 
 .c-container {
   float: right !important;
-  
+
 }
 
 img {
@@ -40,5 +40,15 @@ img {
   margin-top: 1%;
   position: relative;
 }
+
+@media screen and (max-width: 450px) {
+  .c-computer {
+    display: none;
+  }
+
+  img {
+    display: none;
+  }
+ }
 
 </style>

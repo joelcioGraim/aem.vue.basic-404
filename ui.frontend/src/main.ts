@@ -1,5 +1,8 @@
 import './map-components'
-import { AuthoringUtils, ModelManager } from '@adobe/aem-spa-page-model-manager'
+import {
+  AuthoringUtils,
+  ModelManager
+} from '@adobe/aem-spa-page-model-manager'
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
@@ -8,7 +11,7 @@ import { Constants } from '@mavice/aem-vue-editable-components'
 Vue.use(VueRouter)
 
 document.addEventListener('DOMContentLoaded', () => {
-  ModelManager.initialize().then(pageModel => {
+  ModelManager.initialize().then((pageModel) => {
     new Vue({
       router: new VueRouter({
         mode: 'history',

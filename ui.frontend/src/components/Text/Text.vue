@@ -48,6 +48,11 @@ export default {
     getRichTextContent () {
       return DOMPurify.sanitize(this.text)
     }
+  },
+  watch: {
+    text (newText) {
+      this.$emit('input', newText)
+    }
   }
 }
 </script>
@@ -160,6 +165,7 @@ color: #333333;
     padding-left: -4rem !important;
     padding-right: 2rem !important;
   }
+}
   @media screen and (max-width: 450px) {
     .text-format-1 {
       margin-left: -2rem !important;
@@ -170,7 +176,9 @@ color: #333333;
       margin-left: -2rem !important;
       padding-right: 4rem !important;
     }
-  }
+    .ola-text {
+      padding-top: 92% !important;
+    }
 
   // @media screen and (max-width: 340px) {
   //   .text-format-1 {

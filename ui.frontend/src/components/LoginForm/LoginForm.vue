@@ -29,4 +29,22 @@ img {
   position: relative;
   display: none;
 }
+
+ @media screen and (max-width: 450px) {
+  .c-login-form {
+  color: #e0e0e0;
+  position: fixed;
+  width: 98%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 86% 100%;
+  background-color: #1c1d20;
+  }
+
+  img {
+    display: block;
+    margin-left: 11%;
+    max-width: 70vw;
+  }
+ }
 </style>

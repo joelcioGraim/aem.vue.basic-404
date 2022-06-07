@@ -1,11 +1,12 @@
 <template>
-  <button :class="className">{{ text }}</button>
+  <button :class="className" @click="onClick">{{ text }}</button>
 </template>
 
 <script>
 
 export default {
   name: 'Button',
+  emits: ['exibeOla'],
   props: {
     text: {
       type: String,
@@ -13,6 +14,16 @@ export default {
     },
     className: {
       type: String
+    }
+  },
+  methods: {
+    onClick () {
+      if ((localStorage.getItem('usuario') && localStorage.getItem('senha')) &&
+      (localStorage.getItem('usuario') === 'admin' && localStorage.getItem('senha') === 'admin')) {
+        console.log('Login realizado com sucesso')
+      } else {
+        console.log('Login não realizado')
+      }
     }
   }
 }
@@ -66,9 +77,8 @@ export default {
  }
 
  @media screen and (max-width: 450px) {
-   .c-button__404 {
-      margin-left: 16%;
-      margin-top: 15%;
+   .c-button__form {
+      width: 252px;
    }
  }
 

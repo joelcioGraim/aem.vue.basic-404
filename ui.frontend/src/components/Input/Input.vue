@@ -76,11 +76,10 @@ export default {
 //    }
 //  }
 
-//  @media screen and (max-width: 450px) {
-//    .c-button {
-//       margin-left: 16%;
-//       margin-top: 15%;
-//    }
-//  }
+ @media screen and (max-width: 450px) {
+   .input__input {
+      width: 137%;
+   }
+ }
 
 </style>
