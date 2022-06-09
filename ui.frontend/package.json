@@ -18,6 +18,7 @@
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",
     "vue-reactive-storage": "github:ropbla9/vue-reactive-storage",
+    "vue-resource": "^1.5.3",
     "vue-router": "^3.5.1"
   },
   "peerDependencies": {

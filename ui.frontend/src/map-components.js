@@ -9,6 +9,11 @@ import Button from './components/Button/Button'
 import Input from './components/Input/Input'
 import LoginComputer from './components/LoginComputer/LoginComputer'
 import LoginForm from './components/LoginForm/LoginForm'
+import TimeDate from './components/TimeDate/TimeDate'
+import Climate from './components/Climate/Climate'
+import Logo from './components/Logo/Logo'
+import Ball from './components/Ball/Ball'
+import FooterHome from './components/FooterHome/FooterHome'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -28,6 +33,21 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+// FooterHome Component Mapping
+MapTo('vue/components/footer-home')(FooterHome, EditConfig)
+
+// Ball Component Mapping
+MapTo('vue/components/ball')(Ball, EditConfig)
+
+// Logo Component Mapping
+MapTo('vue/components/logo')(Logo, EditConfig)
+
+// Climate Component Mapping
+MapTo('vue/components/climate')(Climate, EditConfig)
+
+// TimeDate Component Mapping
+MapTo('vue/components/time-date')(TimeDate, EditConfig)
 
 // LoginForm Component Mapping
 MapTo('vue/components/login-form')(LoginForm, EditConfig)

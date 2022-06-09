@@ -14,6 +14,18 @@ export default {
 </script>
 
 <style scoped>
+.home-img-logo {
+  width: 55% !important;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.home-img-ball {
+  position: absolute;
+  width: 400px;
+  margin-top: 107px;
+}
+
 img {
   max-width: 45vw;
   min-width: 20vw;

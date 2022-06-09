@@ -1,5 +1,5 @@
 <template>
-  <button :class="className" @click="onClick">{{ text }}</button>
+  <button :class="className" v-on:click="onClick">{{ text }}</button>
 </template>
 
 <script>
@@ -7,6 +7,11 @@
 export default {
   name: 'Button',
   emits: ['exibeOla'],
+  data () {
+    return {
+      page: ''
+    }
+  },
   props: {
     text: {
       type: String,
@@ -18,11 +23,24 @@ export default {
   },
   methods: {
     onClick () {
-      if ((localStorage.getItem('usuario') && localStorage.getItem('senha')) &&
-      (localStorage.getItem('usuario') === 'admin' && localStorage.getItem('senha') === 'admin')) {
-        console.log('Login realizado com sucesso')
-      } else {
-        console.log('Login não realizado')
+      this.page = window.location.pathname.split('/').slice(3)[0]
+
+      switch (this.page) {
+        case '404.html':
+          this.$router.push({ path: '/content/vue/home.html' })
+          this.$router.go()
+          break
+        case 'login.html':
+          if ((localStorage.getItem('usuario') && localStorage.getItem('senha')) &&
+          (localStorage.getItem('usuario') === 'admin' && localStorage.getItem('senha') === 'admin')) {
+            this.$router.push({ path: '/content/vue/home.html' })
+            this.$router.go()
+          } else {
+            this.$root.$emit('exibeOps', 'block')
+          }
+          break
+        default:
+          console.log(`Sorry, we are out of ${this.page}.`)
       }
     }
   }

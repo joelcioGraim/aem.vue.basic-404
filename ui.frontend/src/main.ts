@@ -7,8 +7,10 @@ import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
 import { Constants } from '@mavice/aem-vue-editable-components'
+import VueResource from 'vue-resource'
 
 Vue.use(VueRouter)
+Vue.use(VueResource)
 
 document.addEventListener('DOMContentLoaded', () => {
   ModelManager.initialize().then((pageModel) => {
